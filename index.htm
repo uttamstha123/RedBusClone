@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+
+    <title>The Red Bus</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav>
+        <div class="logo">
+          <img src="./images/logo.png" alt="red bus logo" />
+        </div>
+        <div class="nav-list">
+          <ul>
+            <li><a href="#">Help</a></li>
+            <li class="drop-down-one">
+              <a href="#">English </a>
+              <a class="drop-down" id="1"
+                ><img src="./drop-down.svg" alt="" />
+              </a>
+
+              <div class="drop-down-list hide" id="1">
+                <ul>
+                  <li>English</li>
+                  <li>Espanol</li>
+                </ul>
+              </div>
+            </li>
+            <li class="drop-down-two">
+              <a href="#">USD</a>
+              <a class="drop-down" id="2"
+                ><img src="./drop-down.svg" alt="" />
+              </a>
+
+              <div class="drop-down-list hide" id="2">
+                <ul>
+                  <li>
+                    <p>USD $</p>
+                    <p>us dollar</p>
+                  </li>
+                  <li>
+                    <p>EUR €</p>
+                    <p>euro</p>
+                  </li>
+                  <li>
+                    <p>SGD</p>
+                    <p>singapore dollar</p>
+                  </li>
+                  <li>
+                    <p>AUD</p>
+                    <p>australian dollar</p>
+                  </li>
+                  <li>
+                    <p>gbp</p>
+                    <p>british pound</p>
+                  </li>
+                  <li>
+                    <p>INR ₹</p>
+                    <p>India rupees</p>
+                  </li>
+                  <li>
+                    <p>thb</p>
+                    <p>thai bhat</p>
+                  </li>
+                  <li>
+                    <p>MYR</p>
+                    <p>malaysian ringgit</p>
+                  </li>
+                  <li>
+                    <p>pen</p>
+                    <p>peruvian sol</p>
+                  </li>
+                  <li>
+                    <p>brl</p>
+                    <p>brazilian real</p>
+                  </li>
+                  <li>
+                    <p>cop</p>
+                    <p>colombian peso</p>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="drop-down-three">
+              <a href="#">Manage Booking</a>
+              <span class="drop-down" id="3"
+                ><img src="./drop-down.svg" alt="" />
+              </span>
+              <div class="drop-down-list hide" id="3">
+                <ul>
+                  <li>cancel</li>
+                  <li>show my ticket</li>
+                  <li>email</li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="hero">
+        <div class="form-group">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="From"
+            id="search_from_location"
+          />
+          <input
+            type="text"
+            class="form-control"
+            id="search_to_location"
+            placeholder="To"
+          />
+          <input
+            type="date"
+            class="form-control"
+            id="search_input"
+          />
+          <input
+            type="date"
+            class="form-control"
+            id="search_input"
+          />
+          <input type="submit" value="Search Buses">
+        </div>
+        <img src="./images/hero-fg_new.png" alt="" />
+      </div>
+    </header>
+    <div class="awards">
+      <div class="title awards_title">
+        <p>AWARDS & RECOGNITION</p>
+      </div>
+      <div class="content">
+        <div class="card">
+          <div class="picture">
+            <img src="./images/Business_Standard1.png" alt="" />
+          </div>
+          <div class="text">
+            <p>Most Innovative<br />Company</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="picture">
+            <img src="./images/Brand_Trust_Report.png" alt="" />
+          </div>
+          <div class="text">
+            <p>Most Trusted<br />Brand</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="picture">
+            <img src="./images/Eye_for_Travel1.png" alt="" />
+          </div>
+          <div class="text">
+            <p>Mobile Innovation<br />Award</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="presence">
+      <div class="title presence_title"><p>OUR GLOBAL PRESENCE</p></div>
+      <div class="flags">
+        <div class="country country_row01">
+          <div class="flag flag01">
+            <img src="./images/flag/colombia.jpg" alt="" />
+          </div>
+          <div class="text">
+            <p>COLUMBIA</p>
+          </div>
+        </div>
+        <div class="country country_row01">
+          <div class="flag flag02">
+            <img src="./images/flag/india-flag-icon-64.png" alt="" />
+          </div>
+          <div class="text">
+            <p>INDIA</p>
+          </div>
+        </div>
+        <div class="country country_row01">
+          <div class="flag flag03">
+            <img src="./images/flag/indonesia.jpg" alt="" />
+          </div>
+          <div class="text">
+            <p>INDONESIA</p>
+          </div>
+        </div>
+        <div class="country country_row02">
+          <div class="flag flag04">
+            <img src="./images/flag/malaysia.jpg" alt="" />
+          </div>
+          <div class="text">
+            <p>MALAYSIA</p>
+          </div>
+        </div>
+        <div class="country country_row02">
+          <div class="flag flag05">
+            <img src="./images/flag/peru.png" alt="" />
+          </div>
+          <div class="text">
+            <p>PERU</p>
+          </div>
+        </div>
+        <div class="country country_row02">
+          <div class="flag flag06">
+            <img src="./images/flag/singapore-flag-medium.png" alt="" />
+          </div>
+          <div class="text">
+            <p>SINGAPORE</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="numbers">
+      <div class="title numbers_title">
+        <p>THE NUMBERS ARE GROWING</p>
+      </div>
+      <div class="numbers_content">
+        <div class="stats" id="stats">
+          <p>CUSTOMERS</p>
+          <p>36 M</p>
+          <p>
+            redBus is trusted by over 36<br />million happy customers<br />globally
+          </p>
+        </div>
+        <div class="stats">
+          <p>OPERATORS</p>
+          <p>3500</p>
+          <p>network of over 3500 bus<br />operators worldwide</p>
+        </div>
+        <div class="stats">
+          <p>BUS TICKETS</p>
+          <p>220+ M</p>
+          <p>over 220 million trips<br />booked using redBus</p>
+        </div>
+      </div>
+    </div>
+    <div class="numbers bus">
+      <div class="title bus_title">
+        <p>WE ARE ABOUT BUS TRAVEL</p>
+      </div>
+      <div class="bus_content">
+        <div class="stats" id="bus_about">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
+            perferendis eaque et fugiat aspernatur ipsa nisi similique
+            exercitationem ex animi blanditiis illo, vero, vel non natus sit
+            nihil? Quas sed voluptates delectus error magni at ut natus tempora
+            mollitia aliquam eligendi similique quae porro rerum, quod labore
+            hic saepe esse repudiandae quaerat excepturi beatae. Neque officia
+            saepe rem debitis fugit sed unde nobis accusantium laudantium,
+            praesentium, doloribus ducimus id totam?Lorem ipsum dolor sit amet
+            consectetur, adipisicing elit.
+          </p>
+        </div>
+        <div class="stats" id="bus_about">
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam
+            illo incidunt qui inventore nam! Voluptatum, delectus labore
+            doloremque excepturi earum recusandae tempore qui repudiandae ullam
+            ut iure voluptate exercitationem ipsam ab neque voluptates minima
+            fuga ipsum explicabo,quod Lorem ipsum dolor, sit amet consectetur
+            adipisicing elit. Autem facere saepe ullam porro, quos consequatur
+            maiores, fugit deleniti placeat nulla sit
+          </p>
+        </div>
+
+        <div class="stats" id="bus_about">
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam
+            minima ratione esse error enim nobis possimus laudantium voluptatum
+            praesentium officiis assumenda at vero, aliquam necessitatibus
+            pariatur doloremque eius cupiditate nulla facilis dignissimos sit
+            doloribus. Adipisci doloremque itaque dolorum id veritatis maxime
+            iusto distinctio consequatur velit quae sint in ullam accusantium
+            qui facilis, temporibus quod ducimus, magnam. Lorem ipsum dolor sit
+            amet consectetur, adipisicing elit. Itaque accusantium est animi
+            nobis tempora aliquam beatae ipsam.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="routes">
+      <div class="routes_title"><p>Explore top routes in Europe</p></div>
+      <div class="routes_content">
+        <div class="routes_list">
+          <h1>Spain</h1>
+          <li>Alicante to Madrid Bus</li>
+          <li>Barcelona to Valencia Bus</li>
+          <li>Alicante to Madrid Bus</li>
+          <li>Barcelona to Valencia Bus</li>
+          <li>Alicante to Madrid Bus</li>
+          <li>Barcelona to Valencia Bus</li>
+          <li>Alicante to Madrid Bus</li>
+        </div>
+        <div class="routes_list">
+          <h1>Germany</h1>
+          <li>Barcelona to Valencia Bus</li>
+          <li>Alicante to Madrid Bus</li>
+          <li>Barcelona to Valencia Bus</li>
+          <li>Alicante to Madrid Bus</li>
+          <li>Barcelona to Valencia Bus</li>
+          <li>Alicante to Madrid Bus</li>
+          <li>Barcelona to Valencia Bus</li>
+        </div>
+        <div class="routes_list">
+          <h1>Poland</h1>
+          <li>Alicante to Madrid Bus</li>
+          <li>Barcelona to Valencia Bus</li>
+          <li>Alicante to Madrid Bus</li>
+          <li>Barcelona to Valencia Bus</li>
+          <li>Alicante to Madrid Bus</li>
+          <li>Barcelona to Valencia Bus</li>
+          <li>Alicante to Madrid Bus</li>
+        </div>
+        <div class="routes_list">
+          <h1>UK</h1>
+          <li>Barcelona to Valencia Bus</li>
+          <li>Alicante to Madrid Bus</li>
+          <li>Barcelona to Valencia Bus</li>
+          <li>Alicante to Madrid Bus</li>
+          <li>Barcelona to Valencia Bus</li>
+          <li>Alicante to Madrid Bus</li>
+          <li>Barcelona to Valencia Bus</li>
+        </div>
+        <div class="routes_list">
+          <h1>Bulgaria</h1>
+          <li>Alicante to Madrid Bus</li>
+          <li>Barcelona to Valencia Bus</li>
+          <li>Alicante to Madrid Bus</li>
+          <li>Barcelona to Valencia Bus</li>
+          <li>Alicante to Madrid Bus</li>
+          <li>Barcelona to Valencia Bus</li>
+          <li>Alicante to Madrid Bus</li>
+        </div>
+        <div class="routes_list">
+          <h1>Croatia</h1>
+          <li>Barcelona to Valencia Bus</li>
+          <li>Alicante to Madrid Bus</li>
+          <li>Barcelona to Valencia Bus</li>
+          <li>Alicante to Madrid Bus</li>
+          <li>Barcelona to Valencia Bus</li>
+          <li>Alicante to Madrid Bus</li>
+          <li>Barcelona to Valencia Bus</li>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="footer01">
+        <div class="aboutredBus">
+          <p>About redBus</p>
+          <p>About Us</p>
+          <p>Contact Us</p>
+          <p>Mobile Version</p>
+        </div>
+        <div class="info">
+          <p>Info</p>
+          <p>T & C</p>
+          <p>Privacy Policy</p>
+          <p>Cookie Policy</p>
+          <p>FAQ</p>
+          <p>Blog</p>
+        </div>
+        <div class="globalSites">
+          <p>Global Sites</p>
+          <p>India</p>
+          <p>Singapore</p>
+          <p>Malaysia</p>
+          <p>Indonesia</p>
+          <p>Peru</p>
+          <p>Columbia</p>
+        </div>
+        <div class="ourPartners">
+          <p>Our Partners</p>
+          <p>Goibibo</p>
+          <p>Makemytrip</p>
+        </div>
+      </div>
+      <div class="footer02">
+        <img src="./images/logo.png" id="logo" alt="" />
+        <p>
+          redBus is the world's largest online bus ticket<br />
+          booking service trusted by over 25 million<br />
+          happy customers globally. redBus offers bus<br />
+          ticket booking through its website, iOS and<br />
+          android mobile apps for all major routes.
+        </p>
+        <div class="icons">
+          <p>f</p>
+          <p>t</p>
+        </div>
+        <p>&copy; 2021 ibibo group all rights reserved</p>
+      </div>
+    </footer>
+    <script src="./js/app.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places&key=AIzaSyBefew7EJKf1LzB5rearP1zgjH4Hst-nmg"></script>
+    <script>
+      var searchInput = document.querySelector("#search_from_location");
+      document.addEventListener("keypress", () => {
+        var autocomplete = new google.maps.places.Autocomplete(searchInput, {
+          types: ["geocode"],
+        });
+
+        google.maps.event.addListener(
+          autocomplete,
+          "place_changed",
+          function () {
+            var near_place = autocomplete.getPlace();
+          }
+        );
+      });
+      var searchInput = document.querySelector("#search_to_location");
+      document.addEventListener("keypress", () => {
+        var autocomplete = new google.maps.places.Autocomplete(searchInput, {
+          types: ["geocode"],
+        });
+
+        google.maps.event.addListener(
+          autocomplete,
+          "place_changed",
+          function () {
+            var near_place = autocomplete.getPlace();
+          }
+        );
+      });
+    </script>
+  </body>
+</html>

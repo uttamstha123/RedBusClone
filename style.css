@@ -1,0 +1,399 @@
+:root {
+  --font-family: "Montserrat", sans-serif;
+  --nav-bg: #d84f57;
+  --ff-link: "Poppins", sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+
+.header {
+  min-height: 30vh;
+  max-width: 100%;
+}
+.header nav {
+  min-height: 10%;
+  background: var(--nav-bg);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 2em;
+  z-index: 100;
+}
+.header .logo img {
+  min-width: 4rem;
+  max-width: 6rem;
+}
+.header .nav-list {
+  min-width: 30%;
+  /* max-width: 50%; */
+  height: 100%;
+}
+.header .nav-list ul {
+  display: flex;
+  align-items: center;
+  gap: 2em;
+}
+.header .nav-list a {
+  color: #fff;
+  font-family: var(--ff-link);
+  font-size: 1.25rem;
+}
+.header .nav-list li:not(:first-child) {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  position: relative;
+}
+.header .nav-list .drop-down img {
+  width: 1.8rem;
+}
+/* drop down list */
+
+.drop-down-list {
+  align-self: flex-start;
+  background: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  padding: 1em;
+  position: absolute;
+  top: 150%;
+  left: -20%;
+}
+.drop-down-list ul {
+  display: flex;
+  flex-direction: column;
+}
+.drop-down-list li {
+  /* width: 100%; */
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  font-family: var(--ff-link);
+  font-size: 1.1rem;
+  letter-spacing: 0.1em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.drop-down-list p {
+  text-align: left;
+}
+.drop-down-two .drop-down-list {
+  width: 20rem;
+}
+.drop-down-two .drop-down-list li {
+  width: 100%;
+}
+.drop-down-two .drop-down-list p:first-child {
+  flex: 1;
+  width: 40%;
+  text-transform: uppercase;
+}
+
+.drop-down-two .drop-down-list p:last-child {
+  width: 60%;
+  flex: 2;
+  text-transform: capitalize;
+}
+
+.drop-down {
+  cursor: pointer;
+}
+
+/* toogle class - hide and show the drop-down list */
+.hide {
+  display: none;
+}
+
+/* Hero section */
+
+.hero{
+  height: 90%;
+  max-width: 100%;background: url('./images/hero-bg.png');
+  background-size: cover;
+  /* position: relative; */
+}
+.hero img{
+  max-width: 100%;
+  object-fit: cover;
+}
+.hero input{
+  padding: .4em 1em; 
+  font-size: 1.8rem;
+  border: 1px solid #999;
+  outline: none;
+}
+
+.form-group{
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+
+input[type='submit']{
+  font-family: var(--ff-link);
+  background: var(--nav-bg);
+  color: #fff;
+  border: none;
+}
+.awards {
+  min-height: 60vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.title {
+  font-size: 2.8rem;
+  font-family: var(--font-family);
+  letter-spacing: 0.1rem;
+  font-weight: bolder;
+  opacity: 0.8;
+  margin-top: -2rem;
+}
+
+.content {
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-right: -6rem;
+}
+
+.card {
+  height: 21rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.text {
+  font-size: 1.5rem;
+  font-family: var(--font-family);
+  letter-spacing: 0.3rem;
+  text-align: center;
+  line-height: 2.3rem;
+}
+
+.presence {
+  height: 75vh;
+  padding: 6rem 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  gap: 5rem;
+  background: #f1f1f1;
+}
+
+.flags {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 90%;
+}
+
+.country {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-right: 25rem;
+  margin-bottom: 5rem;
+}
+
+.country_row02 {
+  margin-bottom: 0;
+}
+
+.flag img {
+  width: 12rem;
+}
+
+.flag01 img {
+  height: 8rem;
+}
+
+.flag04 img {
+  width: 13rem;
+}
+
+.flag05 img {
+  height: 8rem;
+}
+
+.numbers {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  font-family: var(--font-family);
+  padding-bottom: 8em;
+}
+
+.numbers_title {
+  margin-top: 5em;
+  margin-bottom: 5em;
+}
+
+.numbers_content {
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: -2em;
+}
+
+.stats {
+  text-align: center;
+}
+
+.stats p:first-child {
+  font-size: 1.8rem;
+}
+
+.stats p:nth-child(2) {
+  color: red;
+  font-size: 5rem;
+  margin-bottom: 1em;
+}
+
+.stats p:last-child {
+  font-size: 1.5rem;
+}
+
+#stats {
+  margin-bottom: -2em;
+}
+.bus {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.575), rgba(0, 0, 0, 0.575)), url(./images/aboutTravel.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 6em;
+  color:white;
+}
+
+.bus_title {
+  margin: 5rem 0 2.5rem 0;
+  opacity: 1;
+  font-size: 3.5rem;
+  font-weight:normal;
+}
+
+.bus_content {
+  width:90%;
+  display:flex;
+  justify-content:space-around;
+  align-items:center;
+  /* margin-left:-2rem; */
+  gap:3rem;
+}
+
+#bus_about {
+  text-align: justify; 
+  height:21rem;
+  line-height:2.2rem;
+}
+
+.bus_content #bus_about:nth-child(2) {
+  width:350rem;
+}
+
+.routes {
+  padding:5rem;
+  padding-bottom:4rem;
+  background:#f1f1f1;
+}
+
+.routes_title {
+  font-family: var(--font-family);
+  font-size:2rem;
+  margin-bottom: 3rem;
+  font-weight:bolder;
+  color:rgba(0, 0, 0, 0.897);
+}
+
+.routes_content {
+  display:flex;
+  font-family: var(--font-family);
+  font-size:1.5rem;
+  width:100%;
+  justify-content: space-between;
+}
+
+.routes_list h1 {
+  font-size:1.6rem;
+  margin-bottom:2rem;
+  font-weight:bolder;
+  color:rgba(0, 0, 0, 0.897);
+}
+
+.routes_list li {
+  font-size:1.35rem;
+  margin-bottom:1rem;
+}
+
+.footer {
+  display:flex;
+  justify-content:space-around;
+  font-family: var(--font-family);
+  background: rgb(40, 36, 71);
+  font-size:1.5rem;
+  padding:4em;
+  color:white;
+}
+
+.footer01 {
+  display:flex;
+  justify-content:space-between;
+  gap:5rem;
+}
+
+.footer01 p {
+  margin-bottom:1rem;
+}
+
+.footer01 p:first-child {
+  font-weight:bold;
+  margin-bottom:1.5em;
+}
+
+.footer02 {
+  line-height:2.5rem;
+  display:flex;
+  flex-direction:column;
+  gap:2rem;
+}
+
+#logo {
+  width:7rem;
+}
+
+.icons {
+  display:flex;
+  gap:2rem;
+}
+
+.icons p {
+  font-size: 2.7rem;
+}
